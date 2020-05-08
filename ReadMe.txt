@@ -1,20 +1,5 @@
-This repo contains information on a model that describes a modified SEIR model integrated with healthcare resources usage with the aim of identifying the consumption rate of PPEs.
+This repository contains a modified version of the SIR epidemic model to include healthcare workers as a separate category and analyses the impact of PPE and medical equipments (ventilators) in the infection dynamics. Although, the motivation for this model was the current SARS-CoV-2 crisis, the generic nature of the model may be applied to any epidemic scenario. Scripts are written in Python using Jupiter notebooks from Conda. The notebook can be viewed using nbviewer at https://nbviewer.jupyter.org/.
 
-1. SEIR Modification: The infectious (I) is split into three types - 
-I1: suspected cases
-I2: patients with mild symptoms
-I3: patients with severe symptoms
-
-2. Healthcare resources model: The staff in frontline healthcare are divided into four categories and are avaialble depending upon the patients. The staffs are also at the risk of contracting the infection.
-H1: Nurses
-H2: Doctors
-H3: Cleaners
-H4: Assistants and others
-
-3. PPE resources model: Personal protective equipments (respiratory/eye/body/hand protection) are modelled to be in five different states and are consumed by healthcare staff depending upon the patient severity status.
-P1: Manufactured PPEs
-P2: PPEs in transit/warehouse
-P3: Complete set of PPEs containing all protective gears
-P4: Defective PPEs
-P5: Incomplete PPEs lacking some of the protective gears
-
+There are two Python3 Jupyter notebooks here:
+1. SIRH model is the simplified version with completed comments.
+2. EpidemicHealthcareResourceModel is the exploration of more complex versions and has lesser comments in the notebook
